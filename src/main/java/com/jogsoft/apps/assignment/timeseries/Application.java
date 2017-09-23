@@ -13,8 +13,9 @@ public class Application {
 	public static void main(String[] args) throws Exception {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 				
+		String filePath = args[0];
 		FileProcessor processor =  context.getBean(FileProcessor.class);
-		processor.processData();		   
+		processor.processData(filePath);		   
 	}
 
 

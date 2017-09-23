@@ -69,6 +69,7 @@ public class DataProcessor {
 	
 
 	public void printResults() {
+		LOGGER.log( Level.INFO, "");
 		LOGGER.log( Level.INFO, "******************** Results ********************");
 		LOGGER.log( Level.INFO, "{0} average: {1}",  new Object[]{ averageSummation.getName(),  averageSummation.getAverage() } );
 		LOGGER.log( Level.INFO, "{0} average since November 2014: {1}", new Object[]{ dateLimitSummation.getName(), dateLimitSummation.getAverage() } );
